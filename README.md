@@ -34,9 +34,7 @@ The Recipe Application is a web-based platform that allows users to explore and 
 ## Installation
 
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/gyan2501/Webledger-FSA
-   ```
+   
 2. Install frontend dependencies:
    ```sh
    cd client
@@ -52,9 +50,9 @@ The Recipe Application is a web-based platform that allows users to explore and 
 4. Create a .env file in the server directory with the following variables:
    ```js
    PORT=8080
-   MONGODB_URL=<your-mongodb-url>
+   mongoURL=<your-mongodb-url>
    JWT_SECRET_KEY=<your-secret-key>
-   SPOONACULAR_API_KEY=<your-spoonacular-api-key>  ';
+   API_KEY=<your-spoonacular-api-key>  ';
    
 5. Start the frontend and backend servers:
  - Frontend:
@@ -66,9 +64,9 @@ The Recipe Application is a web-based platform that allows users to explore and 
 - Backend:
   ```sh
     cd server
-    npm run server
+    npm start
   ```
-6. Access the application in your web browser at http://localhost:3000.
+6. Access the application in your web browser at http://localhost:8080.
 
 ### Usage
 - Users can sign up for an account or log in with existing credentials.
