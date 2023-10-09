@@ -36,7 +36,7 @@ const Login = () => {
 
     try {
       setIsLoading(true);
-      let res = await fetch("https://recipe-application-1fov.onrender.com/users/login", {
+      let res = await fetch("https://webledger-vdjc.onrender.com/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

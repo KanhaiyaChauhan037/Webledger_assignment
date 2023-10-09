@@ -21,11 +21,13 @@ const RecipeDetails = () => {
   const [singleRecipe, setSingalRecipe] = useState({});
 
   const getRecipeDetails = () => {
-    axios.get(`https://recipe-application-1fov.onrender.com/recipes/${id}`).then((res) => {
-      // console.log(res.data.recipe);
-      setSingalRecipe(res.data.recipe);
-      setIsLoading(false);
-    });
+    axios
+      .get(`https://webledger-vdjc.onrender.com/recipes/${id}`)
+      .then((res) => {
+        // console.log(res.data.recipe);
+        setSingalRecipe(res.data.recipe);
+        setIsLoading(false);
+      });
   };
 
   useEffect(() => {

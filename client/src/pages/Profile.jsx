@@ -24,7 +24,7 @@ const Profile = () => {
     const getFavouriteRecipies = async () => {
       try {
         const response = await axios.get(
-          "https://recipe-application-1fov.onrender.com/favourite",
+          "https://webledger-vdjc.onrender.com/favourite",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -46,7 +46,7 @@ const Profile = () => {
     try {
       // Send a DELETE request to your backend API to delete the favorite recipe
       await axios.delete(
-        `https://recipe-application-1fov.onrender.com/favorite/${id}`,
+        `https://webledger-vdjc.onrender.com/favorite/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

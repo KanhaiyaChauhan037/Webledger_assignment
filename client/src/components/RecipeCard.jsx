@@ -11,12 +11,16 @@ const RecipeCard = ({ el }) => {
 const navigate = useNavigate()
   const handleFavouriteRecipe = () => {
     axios
-      .post("https://recipe-application-1fov.onrender.com/favourite", JSON.stringify(el), {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      })
+      .post(
+        "https://webledger-vdjc.onrender.com/favourite",
+        JSON.stringify(el),
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      )
       .then((response) => {
         // Check if the request was successful
         if (response.status === 201) {
@@ -64,7 +68,7 @@ const navigate = useNavigate()
           duration: 5000,
           isClosable: true,
         });
-        navigate("/authentication")
+        navigate("/authentication");
       });
   };
 

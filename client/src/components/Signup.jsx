@@ -34,13 +34,16 @@ const Signup = () => {
 
     try {
       setIsLoading(true);
-      let res = await fetch("https://recipe-application-1fov.onrender.com/users/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userData),
-      });
+      let res = await fetch(
+        "https://webledger-vdjc.onrender.com/users/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+        }
+      );
       let data = await res.json();
       console.log(userData, res);
       setIsLoading(false);
