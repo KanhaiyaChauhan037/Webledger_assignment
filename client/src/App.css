@@ -1,0 +1,15 @@
+/* Style the scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(4, 171, 171); 
+    border-radius: 10px;
+  }
+  
+  /* scrollbar thumb on hover */
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 97, 97);
+  }
